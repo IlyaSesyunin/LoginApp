@@ -28,6 +28,6 @@ class GradientView: UIView {
     
     private func setupGradient() {
         self.layer.addSublayer(gradientLayer)
-        gradientLayer.colors = [UIColor.yellow.cgColor, UIColor.blue.cgColor]
+        gradientLayer.colors = [UIColor.yellow.cgColor, UIColor.green.cgColor]
     }
 }
