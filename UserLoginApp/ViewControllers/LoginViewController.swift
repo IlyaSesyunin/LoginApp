@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    private let user = User()
+    private let person = Person()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarVC = segue.destination as? UITabBarController else { return }
@@ -20,19 +20,19 @@ class LoginViewController: UIViewController {
         
         viewControllers.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.user = user.name + " " + user.surname
+                welcomeVC.user = person.name + " " + person.surname
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let userVC = navigationVC.topViewController as? UserViewController else { return }
-                userVC.dateOfBirth = user.dateOfBirth
-                userVC.placeOfBirth = user.placeOfBirth
-                userVC.placeOfWork = user.placeOfWork
-                userVC.post = user.post
-                userVC.cityOfResidence = user.cityOfResidence
-                userVC.hobbies = user.hobbies
+                userVC.dateOfBirth = person.dateOfBirth
+                userVC.placeOfBirth = person.placeOfBirth
+                userVC.placeOfWork = person.placeOfWork
+                userVC.post = person.post
+                userVC.cityOfResidence = person.cityOfResidence
+                userVC.hobbies = person.hobbies
             } else if let moreInfoVC = viewController as? MoreInfoViewController {
-                moreInfoVC.favoriteDirectors = user.favoriteDirectors
-                moreInfoVC.favoriteFilms = user.favouriteFilms
-                moreInfoVC.favoriteSingers = user.favouriteSingers
+                moreInfoVC.favoriteDirectors = person.favoriteDirectors
+                moreInfoVC.favoriteFilms = person.favouriteFilms
+                moreInfoVC.favoriteSingers = person.favouriteSingers
             }
         }
     }
@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginAction(_ sender: UIButton) {
-        guard userNameTF.text == user.username, passwordTF.text == user.password else {
+        guard userNameTF.text == person.username, passwordTF.text == person.password else {
             showAlert(
                 title: "Invalid login or password",
                 message: "Please, enter correct login and password",
@@ -56,8 +56,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotRegisterData(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(title: "Oops!", message: "Your username is \(user.username) 😉")
-        : showAlert(title: "Oops!", message: "Your password is \(user.password) 😉")
+        ? showAlert(title: "Oops!", message: "Your username is \(person.username) 😉")
+        : showAlert(title: "Oops!", message: "Your password is \(person.password) 😉")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {

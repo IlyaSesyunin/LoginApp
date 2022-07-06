@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0933696A2871C11900BA37D6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093369692871C11900BA37D6 /* GradientView.swift */; };
-		093449A8287463A400D00608 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093449A7287463A400D00608 /* User.swift */; };
+		093449A8287463A400D00608 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093449A7287463A400D00608 /* Person.swift */; };
 		093449AC2874999B00D00608 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093449AB2874999B00D00608 /* UserViewController.swift */; };
 		093449B02874C72F00D00608 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093449AF2874C72F00D00608 /* TabBarViewController.swift */; };
 		093449B22874CB2C00D00608 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093449B12874CB2C00D00608 /* MoreInfoViewController.swift */; };
@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		093369692871C11900BA37D6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		093449A7287463A400D00608 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		093449A7287463A400D00608 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		093449AB2874999B00D00608 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		093449AF2874C72F00D00608 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		093449B12874CB2C00D00608 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		093449A4287462B500D00608 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				093449A7287463A400D00608 /* User.swift */,
+				093449A7287463A400D00608 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 				093449AC2874999B00D00608 /* UserViewController.swift in Sources */,
 				0993D20F286E3DE200BDDACD /* LoginViewController.swift in Sources */,
 				0993D20B286E3DE200BDDACD /* AppDelegate.swift in Sources */,
-				093449A8287463A400D00608 /* User.swift in Sources */,
+				093449A8287463A400D00608 /* Person.swift in Sources */,
 				0933696A2871C11900BA37D6 /* GradientView.swift in Sources */,
 				093449B22874CB2C00D00608 /* MoreInfoViewController.swift in Sources */,
 				0993D20D286E3DE200BDDACD /* SceneDelegate.swift in Sources */,

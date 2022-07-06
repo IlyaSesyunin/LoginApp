@@ -5,7 +5,7 @@
 //  Created by Илья Сесюнин on 05.07.2022.
 //
 
-struct User {
+struct Person {
     let username = "User"
     let password = "Password"
     let name = "Ilya"
