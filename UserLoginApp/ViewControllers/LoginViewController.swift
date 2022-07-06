@@ -21,7 +21,6 @@ class LoginViewController: UIViewController {
         viewControllers.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.user = user.name + " " + user.surname
-                
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let userVC = navigationVC.topViewController as? UserViewController else { return }
                 userVC.dateOfBirth = user.dateOfBirth
@@ -30,7 +29,6 @@ class LoginViewController: UIViewController {
                 userVC.post = user.post
                 userVC.cityOfResidence = user.cityOfResidence
                 userVC.hobbies = user.hobbies
-                
             } else if let moreInfoVC = viewController as? MoreInfoViewController {
                 moreInfoVC.favoriteDirectors = user.favoriteDirectors
                 moreInfoVC.favoriteFilms = user.favouriteFilms

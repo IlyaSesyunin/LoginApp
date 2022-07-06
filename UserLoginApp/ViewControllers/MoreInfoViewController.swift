@@ -13,6 +13,8 @@ class MoreInfoViewController: UIViewController {
     @IBOutlet var favoriteFilmsLabel: UILabel!
     @IBOutlet var favoriteSingersLabel: UILabel!
     
+    @IBOutlet var instagramImageView: UIImageView!
+    
     var favoriteDirectors = ""
     var favoriteFilms = ""
     var favoriteSingers = ""
@@ -22,5 +24,7 @@ class MoreInfoViewController: UIViewController {
         favoriteDirectorsLabel.text = favoriteDirectors
         favoriteFilmsLabel.text = favoriteFilms
         favoriteSingersLabel.text = favoriteSingers
+        
+        instagramImageView.layer.cornerRadius = 10
     }
 }

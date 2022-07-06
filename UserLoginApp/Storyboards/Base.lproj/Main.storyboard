@@ -322,7 +322,7 @@
         <!--More info about me-->
         <scene sceneID="Vw2-vw-Kmn">
             <objects>
-                <viewController id="HjZ-WS-er6" customClass="MoreInfoViewController" customModule="UserLoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HjZ-WS-er6" customClass="MoreInfoViewController" customModule="UserLoginApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Rm-dZ-5k5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -394,11 +394,22 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_2022-07-06 10.28.55" translatesAutoresizingMaskIntoConstraints="NO" id="3Fq-Lw-4Yd">
+                                <rect key="frame" x="39" y="315" width="242" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3Fq-Lw-4Yd" secondAttribute="height" multiplier="121:92" id="mo8-IC-xYJ"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VBp-Y2-5Mx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xCa-6x-FI2" firstAttribute="top" secondItem="VBp-Y2-5Mx" secondAttribute="top" id="E8E-RJ-mkv"/>
+                            <constraint firstItem="VBp-Y2-5Mx" firstAttribute="trailing" secondItem="3Fq-Lw-4Yd" secondAttribute="trailing" constant="39" id="LBA-xl-Qge"/>
+                            <constraint firstItem="3Fq-Lw-4Yd" firstAttribute="leading" secondItem="VBp-Y2-5Mx" secondAttribute="leading" constant="39" id="OWv-v8-v6i"/>
+                            <constraint firstItem="3Fq-Lw-4Yd" firstAttribute="top" secondItem="xCa-6x-FI2" secondAttribute="bottom" constant="33" id="av3-3W-bar"/>
+                            <constraint firstItem="VBp-Y2-5Mx" firstAttribute="bottom" secondItem="3Fq-Lw-4Yd" secondAttribute="bottom" constant="20" id="cpy-kN-3vl"/>
                             <constraint firstAttribute="trailing" secondItem="xCa-6x-FI2" secondAttribute="trailing" constant="16" id="rtx-2u-wtO"/>
                             <constraint firstItem="xCa-6x-FI2" firstAttribute="leading" secondItem="VBp-Y2-5Mx" secondAttribute="leading" constant="16" id="vPB-MA-0HJ"/>
                         </constraints>
@@ -408,11 +419,12 @@
                         <outlet property="favoriteDirectorsLabel" destination="coW-aP-DvH" id="LE7-SV-cT7"/>
                         <outlet property="favoriteFilmsLabel" destination="Bf4-pR-dNq" id="ieU-6H-MQ9"/>
                         <outlet property="favoriteSingersLabel" destination="jqN-fY-bnQ" id="pzd-M9-NqG"/>
+                        <outlet property="instagramImageView" destination="3Fq-Lw-4Yd" id="hvJ-Rs-oOM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Brg-TE-Xz9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3341" y="916"/>
+            <point key="canvasLocation" x="3339.375" y="915.84507042253517"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="Whj-yS-Rny">
@@ -457,6 +469,7 @@
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="photo_2022-07-05 21.29.34" width="640" height="640"/>
+        <image name="photo_2022-07-06 10.28.55" width="1280" height="960"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
