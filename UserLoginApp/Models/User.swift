@@ -16,4 +16,7 @@ struct User {
     let post = "Financial manager"
     let cityOfResidence = "Moscow"
     let hobbies = "Indie music, mobile photos, yoga and pilates"
+    let favoriteDirectors = "Lars von Trier and Hayao Miyazaki"
+    let favouriteFilms = "Dancer in the Dark and Howl's Moving Castle"
+    let favouriteSingers = "Mylene Farmer, Bjork, M83, Tesla Boy, London Grammar, Woodkid, Cream Soda"
 }

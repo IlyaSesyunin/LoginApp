@@ -10,7 +10,8 @@
 		0933696A2871C11900BA37D6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093369692871C11900BA37D6 /* GradientView.swift */; };
 		093449A8287463A400D00608 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093449A7287463A400D00608 /* User.swift */; };
 		093449AC2874999B00D00608 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093449AB2874999B00D00608 /* UserViewController.swift */; };
-		093449AE2874BF3100D00608 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093449AD2874BF3100D00608 /* TabBarViewController.swift */; };
+		093449B02874C72F00D00608 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093449AF2874C72F00D00608 /* TabBarViewController.swift */; };
+		093449B22874CB2C00D00608 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093449B12874CB2C00D00608 /* MoreInfoViewController.swift */; };
 		0993D20B286E3DE200BDDACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993D20A286E3DE200BDDACD /* AppDelegate.swift */; };
 		0993D20D286E3DE200BDDACD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993D20C286E3DE200BDDACD /* SceneDelegate.swift */; };
 		0993D20F286E3DE200BDDACD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993D20E286E3DE200BDDACD /* LoginViewController.swift */; };
@@ -24,7 +25,8 @@
 		093369692871C11900BA37D6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		093449A7287463A400D00608 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		093449AB2874999B00D00608 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
-		093449AD2874BF3100D00608 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		093449AF2874C72F00D00608 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		093449B12874CB2C00D00608 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		0993D207286E3DE200BDDACD /* UserLoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserLoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0993D20A286E3DE200BDDACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0993D20C286E3DE200BDDACD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,9 +53,10 @@
 			isa = PBXGroup;
 			children = (
 				0993D20E286E3DE200BDDACD /* LoginViewController.swift */,
-				093449AD2874BF3100D00608 /* TabBarViewController.swift */,
+				093449AF2874C72F00D00608 /* TabBarViewController.swift */,
 				0993D21E286E48AE00BDDACD /* WelcomeViewController.swift */,
 				093449AB2874999B00D00608 /* UserViewController.swift */,
+				093449B12874CB2C00D00608 /* MoreInfoViewController.swift */,
 				093369692871C11900BA37D6 /* GradientView.swift */,
 			);
 			path = ViewControllers;
@@ -193,12 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				093449AE2874BF3100D00608 /* TabBarViewController.swift in Sources */,
+				093449B02874C72F00D00608 /* TabBarViewController.swift in Sources */,
 				093449AC2874999B00D00608 /* UserViewController.swift in Sources */,
 				0993D20F286E3DE200BDDACD /* LoginViewController.swift in Sources */,
 				0993D20B286E3DE200BDDACD /* AppDelegate.swift in Sources */,
 				093449A8287463A400D00608 /* User.swift in Sources */,
 				0933696A2871C11900BA37D6 /* GradientView.swift in Sources */,
+				093449B22874CB2C00D00608 /* MoreInfoViewController.swift in Sources */,
 				0993D20D286E3DE200BDDACD /* SceneDelegate.swift in Sources */,
 				0993D21F286E48AE00BDDACD /* WelcomeViewController.swift in Sources */,
 			);
