@@ -9,22 +9,26 @@ import UIKit
 
 class MoreInfoViewController: UIViewController {
 
+    @IBOutlet var nameNavigationItem: UINavigationItem!
+    
     @IBOutlet var favoriteDirectorsLabel: UILabel!
     @IBOutlet var favoriteFilmsLabel: UILabel!
     @IBOutlet var favoriteSingersLabel: UILabel!
     
-    @IBOutlet var instagramImageView: UIImageView!
+    @IBOutlet var instagramImageView: UIImageView! {
+        didSet {
+            instagramImageView.layer.cornerRadius = 10
+        }
+    }
     
-    var favoriteDirectors = ""
-    var favoriteFilms = ""
-    var favoriteSingers = ""
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        favoriteDirectorsLabel.text = favoriteDirectors
-        favoriteFilmsLabel.text = favoriteFilms
-        favoriteSingersLabel.text = favoriteSingers
-        
-        instagramImageView.layer.cornerRadius = 10
+        nameNavigationItem.title = "More info about \(user.person.name)"
+        favoriteDirectorsLabel.text = user.person.favoriteDirectors
+        favoriteFilmsLabel.text = user.person.favoriteFilms
+        favoriteSingersLabel.text = user.person.favoriteSingers
+        instagramImageView.image = UIImage(named: user.person.instagramPhoto)
     }
 }

@@ -13,7 +13,7 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.configureWithOpaqueBackground()
+        tabBar.backgroundColor = .clear
         tabBar.standardAppearance = tabBarAppearance
-        tabBar.scrollEdgeAppearance = tabBarAppearance
     }
 }
