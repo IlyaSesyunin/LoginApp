@@ -45,7 +45,7 @@ struct Person {
                hobbies: "Indie music, mobile photos, yoga and pilates",
                favoriteDirectors: "Lars von Trier and Hayao Miyazaki",
                favoriteFilms: "Dancer in the Dark and Howl's Moving Castle",
-               favoriteSingers: "Mylène Farmer, Björk, M83, Tesla Boy, London Grammar, Woodkid, Cream Soda",
+               favoriteSingers: "Mylène Farmer, iamamiwhoami, Björk, M83, Tesla Boy, London Grammar, Woodkid, Cream Soda",
                instagramPhoto: "Ilya_Sesyunin_Instagram"
         )
     }
